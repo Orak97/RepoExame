@@ -1,4 +1,4 @@
-package View;
+package view;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,4 +42,21 @@ public class StringCheck {
 		
 	}
 	
+	public List<String> createListByString(String check, char someChar){
+		ArrayList<String> lista = new ArrayList<>();
+		int count = 0;
+		for (int i = 0; i < check.length(); i++) {
+		    if (check.charAt(i) == someChar) {
+		        count++;
+		    }
+		}
+		String token[];
+		
+		for (int i = 0; i < count; i++) {
+			token =check.split(Character.toString(someChar));
+			
+		}
+		return lista;
+		
+	}
 }
