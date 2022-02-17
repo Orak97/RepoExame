@@ -43,7 +43,6 @@ public class StringCheck {
 	}
 	
 	public String[] createListByString(String check, char someChar){
-		ArrayList<String> lista = new ArrayList<>();
 		int count = 0;
 		for (int i = 0; i < check.length(); i++) {
 		    if (check.charAt(i) == someChar) {
