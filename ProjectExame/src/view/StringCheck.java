@@ -42,7 +42,7 @@ public class StringCheck {
 		
 	}
 	
-	public List<String> createListByString(String check, char someChar){
+	public String[] createListByString(String check, char someChar){
 		ArrayList<String> lista = new ArrayList<>();
 		int count = 0;
 		for (int i = 0; i < check.length(); i++) {
@@ -50,13 +50,14 @@ public class StringCheck {
 		        count++;
 		    }
 		}
-		String token[];
+		
+		String[] token = null;
 		
 		for (int i = 0; i < count; i++) {
 			token =check.split(Character.toString(someChar));
 			
 		}
-		return lista;
+		return token;
 		
 	}
 }
